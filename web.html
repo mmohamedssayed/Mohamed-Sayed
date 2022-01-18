@@ -8,6 +8,283 @@
 <link rel="stylesheet" href="web.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<style>
+
+body{
+     background-color: black; 
+
+}
+/* **************** */
+
+.navbar {
+    width: 100%;
+    background-color: rgb(7, 6, 6);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    
+  }
+  
+  .navbar a {
+    float: right;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    height: 40px;
+    
+  }
+  
+  .navbar a:hover {
+    background-color: rgb(88, 88, 88);
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  p{
+      color: aliceblue;
+      margin-left: 10px;
+      margin-bottom: 2px;
+  }
+
+  /* ________________________________________________________ */
+  
+    .button{
+        width: 100%;
+        font-size: 5vh;
+        background-color: #7979791a;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        border: 0;
+        margin-top: 52px;
+        
+    }
+    .divtext{
+        width: 100%;
+        background-color: #64616131;
+        margin: 0;
+        height: 150px;
+        text-align: center;
+        
+        
+    }
+
+    h1{
+      color: #ffffff;
+        margin-top:0;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 22%;
+        font-family: 'Kufam', sans-serif;
+font-family: 'Lateef', cursive;
+font-family: 'Noto Nastaliq Urdu', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Rakkas', cursive;
+font-family: 'Reem Kufi', sans-serif;
+font-family: 'Vibes', cursive;
+font-size: large;
+    }
+    /* -------------------------------------------------------------- */
+  
+    .social{
+        width: 100%;
+        height: 530px;
+        /* background-color: #04AA6D; */
+        background-image: url(./img/ba.jpg);
+    }
+
+
+    
+
+      .ss .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        margin: 10px;
+        margin-top: 15%;
+        border-radius: 20%;
+      }
+      .fa:hover {
+        opacity: 0.7;
+    }
+    
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    
+    .fa-phone {
+      background: #b3aa30;
+      color: white;
+    }
+    
+    .fa-whatsapp {
+        background: #168812;
+        color: white;
+      }
+      .fa-instagram {
+        background: #a73723;
+        color: white;
+      }
+
+      .fa-mail {
+        background: #125688;
+        color: white;
+      }
+  
+      .ss{
+          text-align: center;
+      }
+
+
+
+      /* ----------------------------------------------------------- */
+
+      .about{
+          /* background-color: #b3aa30; */
+          background-image: url(./img/baa.jpg);
+          width: 100%;
+          height: 450px;
+          overflow: hidden;
+      }
+      /* ___________________________________________________________ */
+      
+
+
+
+
+
+      #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        float: left;
+        margin-top: 15%;
+        
+      }
+      
+      #myImg:hover {opacity: 0.7;}
+      
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+      }
+      
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+      
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+      
+      /* Add Animation */
+      .modal-content, #caption {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+      
+      @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+      }
+      
+      @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+      }
+      
+      /* The Close Button */
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      
+      /* 100% Image Width on Smaller Screens */
+      @media only screen and (max-width: 700px){
+        .modal-content {
+          width: 100%;
+        }
+    }
+        /* ----------------------- */
+        .text1{
+            float: right;
+            background-image: url(./img/text.jpg) ;
+            width: 50%;
+            height: 20%;
+            margin: 4px;
+            margin-right: 8%;
+            margin-top: 6%;
+            text-align: center;
+            justify-content: center;
+            font-size: 4vh ;
+            border: 2px solid rgba(0, 0, 0, 0);
+            overflow: hidden;
+            border-radius: 20px;
+            padding: 2px;
+            
+
+        }
+        .text1:hover{
+           
+            cursor: pointer;
+            
+
+        }
+        .text1 p{
+            margin-top: 4%;
+            color: #8a150d;
+            font-weight: bold;
+            background-color: #4141412f;
+        }
+       
+        
+      
+
+</style>
 
 </head>
 <body>
